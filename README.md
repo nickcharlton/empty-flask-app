@@ -7,6 +7,8 @@ This structure allows you to share the configuration, database and so on with th
 packages which make up each Blueprint. The included `app/example` directory shows
 how to do this.
 
+It's partly based around [Armin Ronacher][]'s [Large App How To][].
+
 ## Structure
 
 For the main part of the app:
@@ -45,3 +47,5 @@ Copyright (c) Nick Charlton <nick@nickcharlton.net>. MIT Licensed.
 [Blueprints]: http://flask.pocoo.org/docs/blueprints/
 [SQLAlchemy]: http://www.sqlalchemy.org/
 [WTForms]: http://wtforms.readthedocs.org/en/latest/
+[Armin Ronacher]: https://github.com/mitsuhiko
+[Large App How To]: https://github.com/mitsuhiko/flask/wiki/Large-app-how-to
