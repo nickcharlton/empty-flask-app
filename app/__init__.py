@@ -17,3 +17,7 @@ def not_found(error):
 @app.errorhandler(500)
 def server_error(error):
     return render_template('500.html'), 500
+
+
+from app.example.views import mod as exampleModule
+app.register_blueprint(exampleModule)
