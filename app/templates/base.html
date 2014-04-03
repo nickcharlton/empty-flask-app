@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>{% block title %}Example App{% endblock %}</title>
+    
+    {% block css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+    {% endblock %}
+    
+    {% block script %}
+    {% endblock %}
+  </head>
+  <body>
+    <header>{% block header %}{% endblock %}</header>
+
+    <div id="messages">
+      {% for category, msg in get_flashed_messages(with_categories=true) %}
+      <p class="message flash-{{ category }}">{{ msg }}</p>
+      {% endfor %}
+    </div>
+
+    <section>{% block content %}{% endblock %}</section>
+
+    <footer>{% block footer %}{% endblock %}</footer>
+  </body>
+</html>
