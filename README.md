@@ -58,6 +58,9 @@ nosetests
 In the root of the project. The flags of `-v` and `-s` will tell you which
 tests are being run, and the stdout of each test, respectively.
 
+Both the [Flask docs][] and the included [Flask-Testing][] package provide
+good explanations of structuring your tests.
+
 ## Author
 
 Copyright (c) Nick Charlton <nick@nickcharlton.net>. MIT Licensed.
@@ -70,3 +73,5 @@ Copyright (c) Nick Charlton <nick@nickcharlton.net>. MIT Licensed.
 [Large App How To]: https://github.com/mitsuhiko/flask/wiki/Large-app-how-to
 [nose]: https://nose.readthedocs.org/en/latest/
 [Travis CI]: https://travis-ci.org/
+[Flask docs]: http://flask.pocoo.org/docs/testing/
+[Flask-Testing]: https://pythonhosted.org/Flask-Testing/
