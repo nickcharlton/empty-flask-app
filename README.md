@@ -1,5 +1,7 @@
 # Empty Flask App
 
+[![Build Status](https://travis-ci.org/nickcharlton/empty-flask-app.svg?branch=master)](https://travis-ci.org/nickcharlton/empty-flask-app)
+
 This is an empty [Flask][] app, using [Blueprints][], [SQLAlchemy][] and [WTForms][]
 which is designed to provide the beginnings of a moderately complex Flask project.
 
