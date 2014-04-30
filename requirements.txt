@@ -1,3 +1,6 @@
 Flask
 Flask-SQLAlchemy
 Flask-WTF
+blinker
+nose
+Flask-Testing
