@@ -2,14 +2,19 @@
 
 [![Build Status](https://travis-ci.org/nickcharlton/empty-flask-app.svg?branch=master)](https://travis-ci.org/nickcharlton/empty-flask-app)
 
-This is an empty [Flask][] app, using [Blueprints][], [SQLAlchemy][] and [WTForms][]
-which is designed to provide the beginnings of a moderately complex Flask project.
+This is an empty [Flask][] app, using [Blueprints][], [SQLAlchemy][] and
+[WTForms][] which is designed to provide the beginnings of a moderately
+complex Flask project.
 
-This structure allows you to share the configuration, database and so on with the
-packages which make up each Blueprint. The included `app/example` directory shows
-how to do this.
+It's designed to spin a nice balance between integration and modularity between
+Blueprints, the included `users.py` and `static.py` aims to provide an example
+of this, with user support (registration, login, etc) and handling of static
+pages respectively.
 
-It's partly based around [Armin Ronacher][]'s [Large App How To][].
+It's based around the "functional" example from [Robert Picard][]'s
+[Explore Flask][] book (which I [kickstarted][]), but it's also taken
+inspiration from [Armin Ronacher][]'s [Large App How To][]. And has example
+tests.
 
 ## Structure
 
@@ -71,6 +76,9 @@ Copyright (c) Nick Charlton <nick@nickcharlton.net>. MIT Licensed.
 [Blueprints]: http://flask.pocoo.org/docs/blueprints/
 [SQLAlchemy]: http://www.sqlalchemy.org/
 [WTForms]: http://wtforms.readthedocs.org/en/latest/
+[Robert Picard]: http://robert.io/
+[Explore Flask]: http://exploreflask.com/
+[kickstarted]: https://www.kickstarter.com/projects/1223051718/practical-flask-book-project
 [Armin Ronacher]: https://github.com/mitsuhiko
 [Large App How To]: https://github.com/mitsuhiko/flask/wiki/Large-app-how-to
 [nose]: https://nose.readthedocs.org/en/latest/
