@@ -2,7 +2,7 @@
 
 from flask.ext.testing import TestCase
 
-from app import app, db
+from example import app, db
 
 
 class AppTestCase(TestCase):

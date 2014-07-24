@@ -2,7 +2,7 @@
 
 from flask.ext.testing import TestCase
 
-from app import app, db
+from example import app, db
 
 
 class ExampleViewsTestCase(TestCase):
@@ -23,5 +23,5 @@ class ExampleViewsTestCase(TestCase):
         response = self.client.get('/')
 
         self.assert_200(response)
-        self.assert_template_used('example/index.html')
+        self.assert_template_used('static/index.html')
         assert '<p>Hello World!</p>' in response.data
