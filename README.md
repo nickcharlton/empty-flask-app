@@ -18,32 +18,23 @@ tests.
 
 ## Structure
 
-For the main part of the app:
-
 ```
-config.py
-run.py
-shell.py
-app/__init__.py
-app/constants.py
-app/static/js/
-app/static/css/
-app/static/img/
-app/templates/404.html
-app/templates/500.html
-app/templates/base.html
-```
-
-For each Blueprint (replacing `example` in each case):
-
-```
-app/example/__init__.py
-app/example/views.py
-app/example/forms.py
-app/example/models.py
-app/example/constants.py
-app/example/decorators.py
-app/templates/example/
+.
+├── config.py
+├── example
+│   ├── __init__.py
+│   ├── __init__.pyc
+│   ├── models.py
+│   ├── static
+│   ├── templates
+│   └── views
+│       ├── __init__.py
+│       ├── __init__.pyc
+│       ├── static.py
+│       ├── static.pyc
+│       └── users.py
+├── requirements.txt
+└── run.py
 ```
 
 ## Testing

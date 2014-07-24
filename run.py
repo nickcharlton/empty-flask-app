@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from app import app
+from example import app
 
-app.run(debug=True)
+app.run()
