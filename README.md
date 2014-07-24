@@ -32,7 +32,7 @@ tests.
 ```
 
 Models would go inside the `example` package as `models.py`, similarly
-something like a group of [Celery][] tasks would go in `tasks.py` alongside it. 
+something like a group of [Celery][] tasks would go in `tasks.py` alongside it.
 
 ## Testing
 
@@ -40,9 +40,10 @@ There's an included test module which sits alongside the `app` module called
 `tests`. It's assumed that you'll use [nose][] for your tests. It also has
 support for [Travis CI][], too.
 
-The included tests cover the `app` module without the `example` blueprint.
-Another module inside `tests` is there to cover `example`. It's assumed that
-you'd have different test modules for each blueprint.
+The example tests are structured to follow the test of the project, with a
+package for each project directory. So, you'd typically have a test file for
+every file in the `views/` directory and then another package containing tests
+for your `utils/` directory, for example.
 
 Running tests is as simple as:
 
