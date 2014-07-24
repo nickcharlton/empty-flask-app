@@ -7,9 +7,8 @@ This is an empty [Flask][] app, using [Blueprints][], [SQLAlchemy][] and
 complex Flask project.
 
 It's designed to spin a nice balance between integration and modularity between
-Blueprints, the included `users.py` and `static.py` aims to provide an example
-of this, with user support (registration, login, etc) and handling of static
-pages respectively.
+Blueprints, `static.py` is included to show this off. Typically, this would be
+used for simple pages.
 
 It's based around the "functional" example from [Robert Picard][]'s
 [Explore Flask][] book (which I [kickstarted][]), but it's also taken
@@ -23,19 +22,17 @@ tests.
 ├── config.py
 ├── example
 │   ├── __init__.py
-│   ├── __init__.pyc
-│   ├── models.py
 │   ├── static
 │   ├── templates
 │   └── views
 │       ├── __init__.py
-│       ├── __init__.pyc
-│       ├── static.py
-│       ├── static.pyc
-│       └── users.py
+│       └── static.py
 ├── requirements.txt
 └── run.py
 ```
+
+Models would go inside the `example` package as `models.py`, similarly
+something like a group of [Celery][] tasks would go in `tasks.py` alongside it. 
 
 ## Testing
 
@@ -72,6 +69,7 @@ Copyright (c) Nick Charlton <nick@nickcharlton.net>. MIT Licensed.
 [kickstarted]: https://www.kickstarter.com/projects/1223051718/practical-flask-book-project
 [Armin Ronacher]: https://github.com/mitsuhiko
 [Large App How To]: https://github.com/mitsuhiko/flask/wiki/Large-app-how-to
+[Celery]: http://www.celeryproject.org/
 [nose]: https://nose.readthedocs.org/en/latest/
 [Travis CI]: https://travis-ci.org/
 [Flask docs]: http://flask.pocoo.org/docs/testing/
